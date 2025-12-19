@@ -229,5 +229,5 @@ class _ArbKeyData {
   Object? value;
   Object? metadataValue;
 
-  _ArbKeyData({required this.key, this.value, this.metadataValue});
+  _ArbKeyData({required this.key});
 }
