@@ -76,10 +76,10 @@ class Generator {
 
   /// Generates localization files.
   Future<void> generateAsync() async {
+    await _sortKeysInArbFiles();
     await _updateL10nDir();
     await _updateGeneratedDir();
     await _generateDartFiles();
-    await _sortKeysInArbFiles();
   }
 
   Future<void> _updateL10nDir() async {
